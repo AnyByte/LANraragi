@@ -5,8 +5,8 @@
   "scripts": {
     "test": "prove -l -v tests/*.t",
     "lanraragi-installer": "perl ./tools/install.pl",
-    "start": "hypnotoad -f ./script/lanraragi -l",
-    "dev-server": "morbo script/lanraragi -l",
+    "start": "perl ./script/launcher.pl -f ./script/lanraragi",
+    "dev-server": "perl ./script/launcher.pl -m -v ./script/lanraragi ",
     "docker-build": "docker build -t difegue/lanraragi -f ./tools/DockerSetup/Dockerfile .",
     "critic": "perlcritic ./lib/* ./script/* ./tools/install.pl"
   },
